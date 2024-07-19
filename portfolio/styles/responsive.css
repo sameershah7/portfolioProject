@@ -1,0 +1,76 @@
+@media screen and (max-width: 750px) {
+
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    header {
+        justify-content: start;
+    }
+
+    header ul {
+        display: none;
+
+    }
+
+    header ul li {
+        margin: 12px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+
+    .aboutme .img img {
+        height: 230px;
+    }
+
+    .description-aboutme {
+        width: 80%;
+    }
+
+    .hero {
+        height: 300px;
+        margin-bottom: 11px;
+    }
+
+    .bulid-text {
+        font-size: 1rem !important;
+    }
+
+    .herotxt p {
+        color: var(--text-color);
+        font-weight: bolder;
+        font-size: 1.5rem;
+    }
+
+    .aboutme {
+        flex-direction: column;
+        height: 730px;
+        align-items: center;
+    }
+
+    .description-aboutme {
+        width: 90% !important;
+    }
+
+    .project-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projectDescription {
+        width: 95%;
+        padding: 12px;
+    }
+
+    .services-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .experience .experience-row {
+        width: 80%;
+    }
+
+}

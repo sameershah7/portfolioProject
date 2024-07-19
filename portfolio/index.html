@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shah portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="burger" id="burger">=</div>
+        <ul id="ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <main id="home">
+        <section class="hero" >
+            <div class="herotxt" >
+                <p class="iam">I'm</p>
+                <p class="hero-text-blue"> Software Developer,</p>
+                <p class="bulid-text">I will <span class="auto-type"></span>.</p>
+            </div>
+        </section>
+        <!-- hero end  -->
+        <!-- about me start -->
+        <section class="aboutme" id="aboutme" data-aos="fade-up">
+            <div class="img"><img src="img/aboutme.jpg" alt=""></div>
+            <div class="description-aboutme" >
+                <h2 class="">About me</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est fugit eveniet nihil sed quaerat tempora tenetur soluta, id neque odit debitis? Obcaecati autem repellat fuga aspernatur quasi quos blanditiis voluptatem!</p>
+            </div>
+        </section>
+        <!-- end about me  -->
+        <hr>
+        <!-- start projects -->
+        <section class="projects" id="projects">
+            <h2 class="heading"> Project</h2>
+            <div class="project-row" data-aos="fade-up">
+                <div class="img"><img src="Project img/pro1.png" alt=""></div>
+                <div class="projectDescription">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis similique itaque neque sequi sapiente nisi voluptas cumque. Earum accusantium ea, nobis quia nemo reiciendis mollitia fuga distinctio vel est qui?</p>
+                </div>
+            </div>
+
+            <div class="project-row" data-aos="fade-up">
+                <div class="img"><img src="Project img/pro2.png" alt=""></div>
+                <div class="projectDescription">
+                    <h3>Project 1</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis similique itaque neque sequi sapiente nisi voluptas cumque. Earum accusantium ea, nobis quia nemo reiciendis mollitia fuga distinctio vel est qui?</p>
+                </div>
+            </div>
+
+
+        </section>
+        <!-- project end -->
+        <hr>
+        <!-- start servies -->
+        <section class="services" id="services">
+            <h2 class="heading">Services</h2>
+
+            <div class="services-row" >
+
+                <div class="frontend services-box" data-aos="fade-right">
+                    <img src="img/frontend.png" alt="">
+                    <div class="service-text">
+
+                        <h3>Front-end Devepment</h3>
+                        <p><strong>Using:</strong><br> Html CSS Bootstrap JavaScript</p>
+                    </div>
+                </div>
+                <div class="backend services-box"  data-aos="fade-left">
+                    <img src="img/backend.png" alt="">
+                    <div class="service-text">
+                        <h3>Back-end Devepment</h3>
+                        <p><strong>Using:</strong><br> comming ...</p>
+
+                    </div>
+                </div>
+        </section>
+        <!-- services end -->
+        <hr>
+        <!--  experience start -->
+        <section class="experience" id="languages">
+            <h2 class="heading">Experience</h2>
+            <div class="experience-row" data-aos="fade-up">
+                <div class="icon-box">
+                    <img src="icon/html-5.png" alt="">
+                    <h3>Html</h3>
+                </div>
+                <div class="icon-box">
+                    <img src="icon/css-3.png" alt="">
+                    <h3>Css</h3>
+                </div>
+                <div class="icon-box">
+                    <img src="icon/bootstrap.png" alt="">
+                    <h3>Bootstrap</h3>
+                </div>
+                <div class="icon-box">
+                    <img src="icon/js.png" alt="">
+                    <h3>Javascript</h3>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <!-- experience end -->
+        <hr>
+
+        <section class="contact" id="contact" >
+            <h2 class="heading">Contact</h2>
+
+            <form action="" method="post" data-aos="fade-up">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Shah. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ['build your business website','build your personal website', 'I build your portfolio', 'convert your figma to html', 'convert any file to html','bulid web application'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        let burger = document.getElementById('burger');
+        let ul = document.getElementById('ul');
+        burger.addEventListener('click', () => {
+
+            if (ul.classList.contains('active')) {
+                ul.classList.remove('active');
+            }
+            else {
+                ul.classList.add('active');
+            }
+        });
+    </script>
+</body>
+
+</html>
