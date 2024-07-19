@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --text-color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #060f17;
+    
+}
+
+hr {
+    height: 4px;
+    background: linear-gradient(45deg, #00BFB4 0%, #24242402 100%);
+    border: none;
+    margin: 23px 0px;
+    
+}
+
+header {
+    height: 55px;
+    background-color: #27292e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header ul li a {
+    list-style: none;
+    margin: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover {
+    font-size: 1.4rem;
+    transition: all 0.3s ease;
+    color: #00BFB4;
+}
+.burger{
+    font-size: 2.5rem;
+    color: white;
+    padding: 9px;
+    cursor: pointer;
+    display: none;
+    margin-left: 21px;
+}
+header ul.active{
+    height: 100%;
+    width: 100%;
+    background-color: #27292e;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* header end  */
+
+/* hero started */
+.hero {
+    background-image: url(../img/hero-bg.png);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+
+}
+
+.iam {
+    font-size: 1.3rem !important;
+    padding-left: 7px;
+}
+
+.hero-text-blue {
+    color: #04a9a0 !important;
+    font-weight: 500;
+}
+
+.bulid-text {
+    font-size: 2rem !important;
+}
+
+.herotxt p {
+    color: var(--text-color);
+    font-weight: 900;
+    font-size: 3.3rem;
+}
+
+/* hero end  */
+/* about me started */
+
+.aboutme {
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.aboutme .img img {
+    height: 300px;
+    border: 3px solid #00BFB4;
+    border-radius: 300px;
+}
+
+.aboutme .description-aboutme {
+    width: 45%;
+    height: 300px;
+    text-align: start;
+    background-color: #27292e;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.aboutme .description-aboutme h2 {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.aboutme .description-aboutme p {
+    color: var(--text-color);
+    width: 85%;
+}
+
+/* end about me */
+/* start projects */
+
+.projects {
+    padding-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-around;
+    border-color: #00000000;
+    background-color: #27292e;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 19px;
+    width: 75%;
+}
+
+
+.heading {
+    margin-top: 23px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 23px;
+}
+
+.project-row img {
+    height: 150px;
+    text-align: start;
+}
+
+.projectDescription h3 {
+    margin: 10px 0px;
+    border-bottom: 2px solid #454545;
+    padding: 6px 0px;
+
+}
+
+.projectDescription {
+    width: 45%;
+    color: var(--text-color);
+}
+
+/* end project */
+
+
+/* start services */
+
+.services-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+
+}
+
+
+.services-box {
+    background-color: #27292e;
+    border: 1px solid #454545;
+    padding: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+    width: 250px;
+    cursor: pointer;
+    margin: 12px;
+    border-radius: 5px;
+}
+
+
+
+.services-box img {
+    height: 190px;
+    padding: 2px;
+    padding-bottom: 12px;
+}
+
+
+.service-text {
+    padding: 12px;
+    color: var(--text-color);
+    text-align: center;
+}
+.service-text p{
+    padding: 10px 0px;
+}
+
+
+/* Services end  */
+/*  */
+
+.experience .experience-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.experience .experience-row .icon-box {
+    background-color: #27292e;
+    border: 1px solid #454545;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+
+.experience .experience-row .icon-box h3 {
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 23px;
+}
+
+.experience .experience-row .icon-box img {
+    height: 160px;
+    margin: 17px;
+}
+
+
+/* contact stated here */
+
+
+
+form {
+    max-width: 450px;
+    margin:0 auto;
+    padding: 20px;
+    padding-bottom: 60px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #060f17;
+    border: 1px solid #454545;
+    color: var(--text-color);
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="text"],
+input[type="email"],
+textarea:checked {
+    background-color: #060f17;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #191b26;
+    color: var(--text-color);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #182133;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+/* footer */
+footer {
+    background-color: #27292e;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+    color: var(--text-color);
+}
